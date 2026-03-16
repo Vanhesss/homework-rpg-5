@@ -38,6 +38,10 @@ public class AdventureResult {
         log.add(line);
     }
 
+    public void prependLine(String line) {
+        log.add(0, line);
+    }
+
     public List<String> getLog() {
         return Collections.unmodifiableList(log);
     }
